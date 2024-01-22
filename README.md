@@ -50,7 +50,7 @@ The APIs required:
 
 ### Example
 
-```(javascript)
+```(js)
 function calculateScore(questionDifficulty, isCorrect) {
     let baseScore = questionDifficulty * 10; // Base score multiplier
     if (isCorrect) {
@@ -73,7 +73,7 @@ To adjust the difficulty of questions based on the user's performance.
 
 **Difficulty Adjustment Logic**: Adjust the level of subsequent questions based on performance.
 
-```(javascript)
+```(js)
 function adjustDifficulty(userAnswers) {
     const correctAnswers = userAnswers.filter(answer => answer.isCorrect).length;
     const totalAnswers = userAnswers.length;
