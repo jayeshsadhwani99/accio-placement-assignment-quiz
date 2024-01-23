@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const sessionSchema = new mongoose.Schema({
+const exerciseSchema = new mongoose.Schema({
   userId: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "User",
@@ -16,6 +16,6 @@ const sessionSchema = new mongoose.Schema({
   // Additional fields can be added to enrich the session data.
 });
 
-const Session = mongoose.model("Session", sessionSchema);
+const Exercise = mongoose.model("Session", exerciseSchema);
 
 module.exports = Session;
